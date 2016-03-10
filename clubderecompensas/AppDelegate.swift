@@ -15,7 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        IQKeyboardManager.sharedManager().enable = true
+        
+       
+//        if let imagenEncabezado = UIImage(named: "encabezado-azul") {
+//            UINavigationBar.appearance().barTintColor = UIColor(patternImage: imagenEncabezado)
+//            //self.window?.rootViewController?.navigationController?.navigationBar.barTintColor = UIColor(patternImage: imagenEncabezado)
+//        }
+        
+        
+        
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
         return true
     }
 
